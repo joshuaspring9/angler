@@ -1,2 +1,12 @@
 language: c
+sudo: required
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y git 
+  - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 /tmp/aarch64-linux-android-4.9
+script:
+  - export CROSS_COMPILE=/tmp/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+  - export ARCH=arm64
+  - make joshuakernel_defconfig
+  - make
 
