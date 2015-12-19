@@ -2,7 +2,8 @@ VERSION = 3
 PATCHLEVEL = 10
 SUBLEVEL = 73
 EXTRAVERSION =
-NAME = JoshuaKernelBeta
+NAME = TOSSUG Baby Fish
+
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
